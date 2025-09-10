@@ -1,174 +1,885 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> JennyRose | Porfolio</title>
 
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="jen.css">
-</head>
-<body>
+
+  body {
   
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand">
-      Jenny <span>Rose</span>
-    </a>
+  padding-top: 40px; 
+  background: linear-gradient(to right, #171f1d, #1a5243);
+  color: #f8fafc;
 
-   
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+}
+  html {
+    scroll-behavior: smooth; 
+  }
 
-   
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  #plexus-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+  }
 
-
-  <section class="hero" id="home">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1>HELLO! I'M JENNYROSE</h1>
-    <h2>I'M A CS STUDENT</h2>
-
-        <p>Computer Science student and aspiring programmer passionate about problem-solving, software development, and creating impactful tech solutions</p>
-        <div class="hero-buttons">
-          
-          <a href="#contacts" class="btn me-2">CONTACT ME</a>
-           <!-- Contact Links -->
-      <div class="d-flex justify-content-start justify-content-md-start gap-3 flex-wrap mt-3 ">
-       <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jennyrosecajuevescordero@gmail.com " class="contact-link" target="_blank">
-        <i class="bi bi-envelope-fill"></i>
-        </a>
-        <a href="https://github.com/jennyrosecajuevescordero-png" class="contact-link" target="_blank">
-          <i class="bi bi-github"></i> 
-        </a>
-        <a href="https://web.facebook.com/jenny.cordero.813369" class="contact-link" target="_blank">
-          <i class="bi bi-facebook"></i>
-        </a>
-      </div>
-        </div>
-      </div>
-      
-    <div class="hero-image">
-
-  <img src="image/541951958_792691513335152_2013237567509655109_n.jpg" alt="Antonio's Portrait">
-</div>
-</div>
-</section>
-
- <div class="container1">
-<h2>About Me</h2>
-    <section class="about-section" id="about">
-      
-      <div class="about-img">
-        <img src="image/538246438_1289961712335579_2381029771792950165_n (1).jpg" alt="Portrait">
-      </div>
-      <div class="about-content">
-        <p>
-      I’m JennyRose Cordero a passionate individual who finds joy in both creativity and discovery. I love cooking and experimenting with flavors, dancing as a way to express myself, and programming to bring ideas to life through code. With a curious mindset, I enjoy exploring the ever-evolving world of technology, learning how systems work, and building solutions that challenge my skills. Whether in the kitchen, on the dance floor, or in front of a computer, I’m driven by creativity, curiosity, and continuous self-improvement.”</p>
-        <div class="details">
-          <div class="details-item"><strong>Birthday:</strong> September 2, 2004</div>
-          <div class="details-item"><strong>City:</strong> Mandaon, Masbate PH</div>
-          <div class="details-item"><strong>Phone:</strong> +639319923625</div>
-          <div class="details-item"><strong>Email:</strong> jennyrosecajuevescordero@gmail.com</div>
-        </div>
-      </div>
-    </section>
-
-   
-
-  <div class="experience">
-<h2 >Experience</h2>
-
-<section class="experience-section" id="experience">
+  .navbar {
+    background-color: #282e38;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    
   
-  <div class="experience-card">
-    <h3>Work Experience</h3>
-    <ul>
-      <li>Sales Lady </li>
-      <li>Barista</li>
-    </ul>
-  </div>
+  }
+.navbar li a{
+  font-size: 20px;
+}
+  .navbar-brand {
+    font-weight: 600;
+    color: #06fb78;
+    font-size: 28px;
+    cursor: default !important;
+    text-decoration: none !important;
+    pointer-events: none;
+     font-family: 'Orbitron', sans-serif;
+    
+    
+  }
+.hero-image {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-image img {
+  display: block;
+  width: 700px; /* or 100%, based on your layout */
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.bg-circles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2); /* 2x bigger */
+  z-index: 1;
+  pointer-events: none; /* allow clicks to pass through */
+}
+  .nav-link {
+    color: #f8fafc;
+    
+  }
+
+  .nav-link:hover {
+    color: #06fb78;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    padding: 2rem;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .hero-text {
+    flex: 1 1 500px;
+    max-width: 600px;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  .hero-text h2 {
+    font-size: 2.5rem;
+    color: #06fb78;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .hero-text .blink {
+    animation: blinkOpacity 1s step-end infinite;
+  }
+
+  @keyframes blinkOpacity {
+    from, to { opacity: 0; }
+    50% { opacity: 1; }
+  }
+
+  .hero-text p {
+    color: #cbd5e1;
+    font-size: 20px;
+    margin-bottom: 2rem;
+  }
+
+  .hero-buttons .btn {
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+  }
+.hero-buttons .btn{
+  background-color:  #06fb78;
+}
+.hero-buttons .btn:hover{
+  color: #0f172a;
+  background-color: #cbd5e1;
+}
+  .hero-image {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+   
+  }
+
+  .projects {
+    padding: 4rem 2rem;
+  }
+
+  .projects h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color:  #06fb78;
+    text-shadow: 0 0 10px  #06fb78;
+  }
+
+  .card {
+    background: #0f172a;
+    border: 1px solid #06fb78;
+    border-radius: 1rem;
+    transition: transform 0.3s;
+    box-shadow: 0 0 20px rgba(0,255,255,0.1);
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0,255,255,0.3);
+  }
+
+  .card-img-top {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .card-title {
+    color:  #06fb78;
+  }
+
+  .card-text {
+    color: #f8fafc;
+  }
+
+  .contact {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+
+  .contact a {
+    color:  #06fb78;
+    border: 1px solid  #06fb78;
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .contact a:hover {
+    background-color: #fff;
+    color: #0f172a;
+  }
+.contact .contact-link a {
+  margin-right: 200px;
+}
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #282e38;
+    color: #bfc8d4;
+    font-size: 0.9rem;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .facebook-btn {
+    display: inline-block;
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid  #06fb78;
+    transition: 0.3s;
+    background: transparent;
+  }
+
+  .facebook-btn svg {
+    vertical-align: middle;
+  }
+
+  .subtext {
+    color: #06fb78;
+    font-weight: bold;
+  }
+
+  .cursor {
+    display: inline-block;
+    animation: blinkCursor 1s steps(2, start) infinite;
+    color:  #06fb78;
+    font-weight: bold;
+  }
+
+  @keyframes blinkCursor {
+    to { visibility: hidden; }
+  }
+
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+     
+      
+    }
 
  
-</section>
-</div>
+    .hero-text h1 {
+      font-size: 2.2rem;
+    }
+
+    .hero-text h2 {
+      font-size: 1.8rem;
+       
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero-buttons .btn {
+      margin-bottom: 10px;
+      width: 80%;
+      max-width: 250px;
+    }
+
+    .hero-image {
+      position: static;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 250px;
+    }
+
+ 
+
+    .projects .row {
+      justify-content: center;
+    }
+
+    .card-text {
+      font-size: 0.95rem;
+    }
+
+    .contact a {
+      display: block;
+      margin: 10px auto;
+      width: 80%;
+      max-width: 250px;
+      gap: 20px;
+      
+    }
+
+    .facebook-btn {
+      margin: 10px auto;
+      display: block;
+    }
+ .hero-image {
+  order: -1; /* Moves the image above the text */
+}
+    .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* full screen height */
+  padding: 20px;
+  margin-top: 60px;
+  
+
+ 
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+  }
+
+  
+.contact-link {
+  display: inline-block;
+  padding: 10px 15px;
+   background: rgba(255, 255, 255, 0.1);  /* semi-transparent */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 30px;
+  color:  #06fb78;
+
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  background-color: #4C585B;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(13, 110, 253, 0.2);
+}
+
+.contact-link i {
+  margin-right: 6px;
+ 
+}
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border: 4px solid  #06fb78;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, filter 0.3s ease;
+  border-radius: 8px;
+  
+}
+.project-card h4{
+  color:  #06fb78;
+  text-align: center;
+}
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.1); 
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px); /* Adds a blur background */
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.project-card:hover .overlay-text {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.overlay-text h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.overlay-text p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.view-link {
+  display: inline-block;
+  background-color:  #06fb78;
+  color:#1e293b;
+  padding: 8px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.view-link:hover {
+  background-color:  #06fb78;
+}
+.project-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.project-card.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.navbar-nav .nav-link {
+  position: relative;
+  padding-bottom: 5px;
+  color: #f8fafc; 
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color:  #06fb78;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+.mobile-nav-box {
+  background: #0f172a;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 20px;
+  width: 50%;
+  max-width: 350px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.modal-backdrop.show {
+  background-color: rgba(0, 0, 0, 0.6); 
+  backdrop-filter: blur(100px);
+}
+
+ 
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+       
+    }
+    .about-img img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px #06fb78;
+    transition: all 0.3s ease;
+   border: 5px solid  #06fb78;
 
 
 
-<div class="contacts-section">
-  <h2>Contacts</h2>
-<section class="contacts" id="contacts">
-<div class="contact-container">
-  <div class="contact-box row g-4">
+  }
+  
+  .about-img img:hover{
+     transform: scale(1.1);
+  box-shadow: 0 8px 20px  #06fb78;
+  }
+    .about-content {
+      max-width: 850px;
+      text-align: justify;
+    }
+    .about-content p {
+      line-height: 1.6;
+     color: #cbd5e1;
+    font-size: 20px;
+    margin-bottom: 2rem;
+    }
+    .details {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .details div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      
+    }
+   
+   
+ 
+    @media(max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .about-content {
+      max-width: 350px;
+     
+    }
+       .about-content p {
+     
+    font-size: 1rem;
+  
+    }
+      .details-item {
+ 
+  font-size: 2px;
+  
+}
 
-    <!-- Left Section -->
-    <div class="col-md-6 d-flex flex-column justify-content-center">
-      <h2 class="mb-3" style="margin-right: 250px;">Contact Me</h2>
-      <p>Ready for a digital presence? I’ll make it happen.</p>
+.interests {
+     
+      font-size: 1rem;
+      
+    }
 
-      <div class="contact-info mt-4">
-        <p><i class="bi bi-geo-alt-fill"></i> Address: Mandaon, Masbate PH</p>
-        <p><i class="bi bi-envelope-fill"></i> Email: jennyrosecajuevescordero@gmail.com</p>
-        <p><i class="bi bi-telephone-fill"></i> Phone: (+63)931-9923-625</p>
-      </div>
-    </div>
+    .interest-item img {
+      width: 50px;
+      height: 50px;
+    }
+    }
+    .container1 h2{
+      text-align: center;
+      
+      color:  #06fb78;
+       
+    margin-bottom: 2rem;
+    color:  #06fb78;
+    text-shadow: 0 0 10px #06fb78;
+    }
+    .container1{
+      min-height: 100vh;
+      margin-top: 50px;
+    }
 
-    <!-- Right Section (Form) -->
-    <div class="col-md-6">
-      <form id="contact-form">
-        <div class="mb-4">
-          <label class="name">Name</label>
-          <input type="text" class="form-control" id="name" name="from_name" placeholder="Enter your full name" required>
-        </div>
-        <div class="mb-4">
-          <label class="email">Email</label>
-         <input type="email" class="form-control" id="email" name="reply_to" placeholder="example@gmail.com" required>
-        </div>
-        <div class="mb-4">
-          <label class="message">Message</label>
-          <textarea class="form-control" id="message" name="message" rows="3" placeholder="Enter your message" required></textarea>
-        </div>
-        <button type="submit" class="send-btn">Send Messages</button>
-          <p class="message" id="formMessage"></p>
+.details{
+  font-size: 20px;
+  display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
 
-        <div class="social-icons mt-4 ">
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jennyrosecajuevescordero@gmail.com " class="icon" style="text-decoration: none;" target="_blank">
-        <i class="bi bi-envelope-fill"></i>
-        </a>
-        <a href="https://github.com/jennyrosecajuevescordero-png"  target="_blank" style="text-decoration: none;">
-          <i class="bi bi-github"> </i> 
-        </a>
-        <a href="https://web.facebook.com/jenny.cordero.813369"  target="_blank">
-          <i class="bi bi-facebook "> </i> 
-        </a>
-        </div> 
-      </form>
-    </div>
-  </div>
-</div>
-</div>
 
-</section>
 
-  <footer>
-    &copy; 2025 JennyRose. All rights reserved.
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 10px 0;
+}
+
+.details-item {
+  width: 50%;  
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #f8fafc;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-in-out;
+  
+ 
+}
+
+
+
+@media (max-width: 768px) {
+  .details-item {
+    width: 100%; 
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 1rem;
+    
+  }
+
+
+  
+}
+.logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+  flex-wrap: wrap; 
+  margin-top: 20px;
+}
+
+
+
+
+body h2{
+  font-weight: bold;
+}
+
+@media(max-width: 768px) {
+  .container-skills{
+    margin-top: 100px;
+  }
+}
+
+
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.experience-card {
+  background-color: #313438bd;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+  margin-bottom: 100px;
+}
+
+
+.experience-card:hover {
+  transform: translateY(-5px);
+    transition: all 0.3s ease;
+
+  box-shadow: 0 8px 20px  #06fb78;
+  
+  
+}
+
+.experience-card h3 {
+  color:  #06fb78;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.date-range {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.position-title {
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #cbd5e1;
+}
+
+.experience-card ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.experience-card li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .experience-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .experience-card {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .experience-card {
+    width: 40%;
+  }
+}
+.experience h2{
+   text-align: center;
+      margin-bottom: 4rem;
+  color:  #06fb78;
+  text-shadow: 0 0 10px  #06fb78;
+}
+
+
+.contact-container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .contact-box {
+      background: #313438bd;
+      border-radius: 20px;
+      padding: 40px;
+      backdrop-filter: blur(10px);
+      width: 100%;
+      max-width: 1200px;
+    }
+    .contact-info i {
+      font-size: 20px;
+      margin-right: 10px;
+      color:  #06fb78;
+    }
+    .app-buttons img {
+      width: 140px;
+      margin: 10px 10px 0 0;
+    }
+    .form-control {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #f8fafc;
+      border-radius: 0;
+      color: #f8fafc;
+    }
+    .form-control::placeholder {
+      color: #94a3b8;
+    }
+    .send-btn {
+      background:  #06fb78;
+      color: #0f172a;
+      border-radius: 30px;
+      padding: 10px 30px;
+      font-weight: bold;
+      border: none;
+      transition: 0.3s;
+    }
+    .send-btn:hover {
+      background: #cbd5e1;
+      color: #0f172a;
+    }
+    .social-icons i {
+      font-size: 20px;
+      margin-right: 15px;
+      color:  #06fb78;
+      cursor: pointer;
+    }
+   .social-icons i:hover{
+    color: #f8fafc;
+   }
+
+   .contacts-section h2{
+      text-align: center;
+      color:  #06fb78;
+    margin-top: 100px;
+    color:  #06fb78;
+    text-shadow: 0 0 10px  #06fb78;
+
+   }
+
+   .project-card,
+.interest-item,
+.details-item,
+.experience-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.container-skills{
+    margin-top: 50px;
+}
+
+#resume{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:  #06fb78;
+}
+
+.navbar-nav .nav-link.active::after {
+  width: 0;
+}
+
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+
+.navbar-nav .nav-link.active:focus::after,
+.navbar-nav .nav-link.active:visited::after,
+.navbar-nav .nav-link.active:active::after {
+  width: 100%;
+}
+.hero-image img{
+  width: 700px;
+  border-radius: 50%;
+   border: 5px solid  #06fb78;
+   margin-bottom: 100px;
+    transition: all 0.3s ease;
+
+
+
+  }
+  
+  .hero-image img:hover{
+     transform: scale(1.1);
+  box-shadow: 0 8px 20px  #06fb78;
+  }
+  span{
+  color: #f8fafc;
+}
+
+.experience {
+  margin-top: 100px;
+}
+
+.contact-box{
+   transition: all 0.3s ease;
+   border: 3px solid #06fb78;
+
+}
+
+.contact-box:hover{
+   transform: scale(1);
+  box-shadow: 0 8px 20px  #06fb78;
+
+}
+
+.experience-card{
+  border: 3px solid  #06fb78;
+}
