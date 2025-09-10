@@ -3,7 +3,7 @@
   body {
   
   padding-top: 40px; 
-  background: linear-gradient(to right,#1c2327, #3f5865);
+  background: linear-gradient(to right, #171f1d, #1a5243);
   color: #f8fafc;
 
 }
@@ -32,7 +32,7 @@
 }
   .navbar-brand {
     font-weight: 600;
-    color: #0685fb;
+    color: #06fb78;
     font-size: 28px;
     cursor: default !important;
     text-decoration: none !important;
@@ -68,7 +68,7 @@
   }
 
   .nav-link:hover {
-    color: #0685fb;
+    color: #06fb78;
   }
 
   .hero {
@@ -99,7 +99,7 @@
 
   .hero-text h2 {
     font-size: 2.5rem;
-    color: #0685fb;
+    color: #06fb78;
     font-weight: 600;
     margin-bottom: 1rem;
   }
@@ -125,7 +125,7 @@
     border-radius: 30px;
   }
 .hero-buttons .btn{
-  background-color: #0685fb;
+  background-color:  #06fb78;
 }
 .hero-buttons .btn:hover{
   color: #0f172a;
@@ -154,13 +154,13 @@
   .projects h2 {
     text-align: center;
     margin-bottom: 2rem;
-    color: #0685fb;
-    text-shadow: 0 0 10px #0685fb;
+    color:  #06fb78;
+    text-shadow: 0 0 10px  #06fb78;
   }
 
   .card {
     background: #0f172a;
-    border: 1px solid #0685fb;
+    border: 1px solid #06fb78;
     border-radius: 1rem;
     transition: transform 0.3s;
     box-shadow: 0 0 20px rgba(0,255,255,0.1);
@@ -177,7 +177,7 @@
   }
 
   .card-title {
-    color: #0685fb;
+    color:  #06fb78;
   }
 
   .card-text {
@@ -190,8 +190,8 @@
   }
 
   .contact a {
-    color: #0685fb;
-    border: 1px solid #0685fb;
+    color:  #06fb78;
+    border: 1px solid  #06fb78;
     padding: 0.6rem 1.5rem;
     border-radius: 5px;
     text-decoration: none;
@@ -229,7 +229,7 @@
     margin-left: 15px;
     padding: 10px;
     border-radius: 50%;
-    border: 1px solid #0685fb;
+    border: 1px solid  #06fb78;
     transition: 0.3s;
     background: transparent;
   }
@@ -239,14 +239,14 @@
   }
 
   .subtext {
-    color: #0685fb;
+    color: #06fb78;
     font-weight: bold;
   }
 
   .cursor {
     display: inline-block;
     animation: blinkCursor 1s steps(2, start) infinite;
-    color: #0685fb;
+    color:  #06fb78;
     font-weight: bold;
   }
 
@@ -359,7 +359,7 @@
   text-decoration: none;
   font-weight: 500;
   border-radius: 30px;
-  color: #0685fb;
+  color:  #06fb78;
 
   transition: all 0.3s ease;
 }
@@ -378,14 +378,14 @@
 .project-card {
   position: relative;
   overflow: hidden;
-  border: 4px solid #0685fb;;
+  border: 4px solid  #06fb78;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.4s ease, filter 0.3s ease;
   border-radius: 8px;
   
 }
 .project-card h4{
-  color: #0685fb;;
+  color:  #06fb78;
   text-align: center;
 }
 .project-card img {
@@ -443,7 +443,7 @@
 
 .view-link {
   display: inline-block;
-  background-color: #0685fb;
+  background-color:  #06fb78;
   color:#1e293b;
   padding: 8px 14px;
   border-radius: 4px;
@@ -453,7 +453,7 @@
 }
 
 .view-link:hover {
-  background-color: #0685fb;
+  background-color:  #06fb78;
 }
 .project-card {
   opacity: 0;
@@ -480,7 +480,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #0685fb; /* underline color */
+  background-color:  #06fb78;
   transition: width 0.3s ease;
 }
 
@@ -514,9 +514,9 @@
     .about-img img {
       width: 250px;
       height: auto;
-      border-radius: 10px;
-        border: 5px solid #0685fb;
+      border-radius: 10px #06fb78;
     transition: all 0.3s ease;
+   border: 5px solid  #06fb78;
 
 
 
@@ -524,7 +524,7 @@
   
   .about-img img:hover{
      transform: scale(1.1);
-  box-shadow: 0 8px 20px #0685fb;
+  box-shadow: 0 8px 20px  #06fb78;
   }
     .about-content {
       max-width: 850px;
@@ -585,11 +585,11 @@
     .container1 h2{
       text-align: center;
       
-      color: #0685fb;
+      color:  #06fb78;
        
     margin-bottom: 2rem;
-    color: #0685fb;
-    text-shadow: 0 0 10px#0685fb;
+    color:  #06fb78;
+    text-shadow: 0 0 10px #06fb78;
     }
     .container1{
       min-height: 100vh;
@@ -687,13 +687,13 @@ body h2{
   transform: translateY(-5px);
     transition: all 0.3s ease;
 
-  box-shadow: 0 8px 20px #0685fb;
+  box-shadow: 0 8px 20px  #06fb78;
   
   
 }
 
 .experience-card h3 {
-  color: #0685fb;
+  color:  #06fb78;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
@@ -740,8 +740,8 @@ body h2{
 .experience h2{
    text-align: center;
       margin-bottom: 4rem;
-  color: #0685fb;
-  text-shadow: 0 0 10px #0685fb;
+  color:  #06fb78;
+  text-shadow: 0 0 10px  #06fb78;
 }
 
 
@@ -763,7 +763,7 @@ body h2{
     .contact-info i {
       font-size: 20px;
       margin-right: 10px;
-      color: #0685fb;
+      color:  #06fb78;
     }
     .app-buttons img {
       width: 140px;
@@ -780,7 +780,7 @@ body h2{
       color: #94a3b8;
     }
     .send-btn {
-      background: #0685fb;
+      background:  #06fb78;
       color: #0f172a;
       border-radius: 30px;
       padding: 10px 30px;
@@ -795,7 +795,7 @@ body h2{
     .social-icons i {
       font-size: 20px;
       margin-right: 15px;
-      color: #0685fb;
+      color:  #06fb78;
       cursor: pointer;
     }
    .social-icons i:hover{
@@ -804,10 +804,10 @@ body h2{
 
    .contacts-section h2{
       text-align: center;
-      color: #0685fb;
+      color:  #06fb78;
     margin-top: 100px;
-    color: #0685fb;;
-    text-shadow: 0 0 10px #0685fb;;
+    color:  #06fb78;
+    text-shadow: 0 0 10px  #06fb78;
 
    }
 
@@ -827,7 +827,7 @@ body h2{
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #0685fb;
+    color:  #06fb78;
 }
 
 .navbar-nav .nav-link.active::after {
@@ -848,7 +848,7 @@ body h2{
 .hero-image img{
   width: 700px;
   border-radius: 50%;
-   border: 5px solid #0685fb;
+   border: 5px solid  #06fb78;
    margin-bottom: 100px;
     transition: all 0.3s ease;
 
@@ -858,7 +858,7 @@ body h2{
   
   .hero-image img:hover{
      transform: scale(1.1);
-  box-shadow: 0 8px 20px #0685fb;
+  box-shadow: 0 8px 20px  #06fb78;
   }
   span{
   color: #f8fafc;
@@ -870,16 +870,16 @@ body h2{
 
 .contact-box{
    transition: all 0.3s ease;
-   border: 3px solid #0685fb;
+   border: 3px solid #06fb78;
 
 }
 
 .contact-box:hover{
    transform: scale(1);
-  box-shadow: 0 8px 20px #0685fb;
+  box-shadow: 0 8px 20px  #06fb78;
 
 }
 
 .experience-card{
-  border: 3px solid #0685fb;
+  border: 3px solid  #06fb78;
 }
